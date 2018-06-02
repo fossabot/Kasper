@@ -12,7 +12,7 @@ script:
 before_deploy:
       - git config --local user.name "travis-ci"
       - git config --local user.email "ci@travis-ci.com"
-      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+      - git tag "kasper-$(date +'%Y%m%d')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
