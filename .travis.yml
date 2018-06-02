@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "8.10"
+branches:
+  only:
+    - ci
+before_install:
+  - npm install -g yarn
+install:
+  - yarn install
+  - yarn zip
+  - ls
+  - ls dist
