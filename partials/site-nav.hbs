@@ -19,6 +19,11 @@
             {{#if @blog.twitter}}
                 <a class="social-link social-link-tw" href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
             {{/if}}
+            {{!-- Custom Social Links --}}
+            {{!--GitHub--}} <a class="social-link social-link-tw" href="https://github.com/sh0rez" target="_blank" rel="noopener">{{> "icons/github"}}</a>
+            {{!--GitLab--}} <a class="social-link social-link-tw" href="https://gitlab.com/shorez" target="_blank" rel="noopener">{{> "icons/gitlab"}}</a>
+            {{!--GitLab--}} <a class="social-link social-link-tw" href="https://hub.docker.com/u/shorez/" target="_blank" rel="noopener">{{> "icons/docker"}}</a>
+
         </div>
         {{#if @labs.subscribers}}
             <a class="subscribe-button" href="#subscribe">Subscribe</a>
