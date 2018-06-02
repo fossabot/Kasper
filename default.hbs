@@ -11,18 +11,40 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset "built/prism.css"}}" />
-    <link 
-        rel="stylesheet" 
-        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{asset "built/shariff.min.css"}}" />
 
-    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
-    {{ghost_head}}
+    {{!-- Styles'n'Scripts --}}
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="{{asset "built/prism.css"}}" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{asset "built/shariff.min.css"}}" /> 
+    </noscript>
+
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}} {{ghost_head}}
+    <script>
+        document.addEventListener('DOMContentLoaded', loadFiles, false);
+
+        function loadCSS(href, before, media) {
+            "use strict";
+            var ss = window.document.createElement("link");
+            var ref = before || window.document.getElementsByTagName("script")[0];
+            ss.rel = "stylesheet";
+            ss.href = href;
+            ss.media = "only x";
+            ref.parentNode.insertBefore(ss, ref);
+            setTimeout(function () {
+                ss.media = media || "all";
+            });
+            return ss;
+        }
+
+        function loadFiles() {
+            loadCSS('/assets/built/prism.css');
+            loadCSS('/assets/built/shariff.min.css');
+            loadCSS('https://use.fontawesome.com/releases/v5.0.13/css/all.css');  
+        }
+    </script>
 
 </head>
 <body class="{{body_class}}">
@@ -68,10 +90,10 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.min.js"}}"></script>
 
     {{!-- Prism JS Syntax Highlighter --}}
-    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
 
     {{!-- Shariff privacy friendy social-share --}}
     <script type="text/javascript" src="{{asset "js/shariff.min.js"}}"></script>
@@ -83,7 +105,7 @@
         // we reached the last page already.
         var maxPages = parseInt('{{pagination.pages}}');
     </script>
-    <script src="{{asset "js/infinitescroll.js"}}"></script>
+    <script src="{{asset "js/infinitescroll.min.js"}}"></script>
     {{/if}}
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
