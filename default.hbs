@@ -19,6 +19,7 @@
         href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{asset "built/shariff.min.css"}}" />
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -69,8 +70,11 @@
     </script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
 
-    {{!-- Prism JS --}}
+    {{!-- Prism JS Syntax Highlighter --}}
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+
+    {{!-- Shariff privacy friendy social-share --}}
+    <script type="text/javascript" src="{{asset "js/shariff.min.js"}}"></script>
 
     {{#if pagination.pages}}
     <script>
