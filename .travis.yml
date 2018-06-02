@@ -21,4 +21,4 @@ deploy:
   file: dist/*
   on:
     repo: sh0rez/Kasper
-    branch: ci
+    branch: master
