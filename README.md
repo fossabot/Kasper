@@ -1,6 +1,7 @@
 
 
 # Kasper 🤡 (formerly Casper)
+[![Build Status](https://travis-ci.org/sh0rez/Kasper.svg?branch=master)](https://travis-ci.org/sh0rez/Kasper)
 ![tag](https://img.shields.io/github/tag/sh0rez/Kasper.svg)
 ![license](https://img.shields.io/github/license/sh0rez/Kasper.svg)
 
