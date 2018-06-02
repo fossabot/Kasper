@@ -1,5 +1,9 @@
 
+
 # Kasper 🤡 (formerly Casper)
+![tag](https://img.shields.io/github/tag/sh0rez/Kasper.svg)
+![license](https://img.shields.io/github/license/sh0rez/Kasper.svg)
+
 Theme for the Ghost blogging platform, forked from the official Casper theme, modified for use on my private blog and oriented towards the DSGVO / GDPR.
 ### Most relevant added / improved features:
 * 🖍️ Syntax Highlighting using [`prism.js`](https://prismjs.com/index.html)
