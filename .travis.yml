@@ -17,3 +17,4 @@ deploy:
   on:
     repo: sh0rez/Kasper
     branch: ci
+if: tag IS present
