@@ -1,7 +1,19 @@
-# Kasper (formerly Casper)
-Theme for the Ghost blogging platform, forked from the official Casper theme, modified for use on my private blog and oriented the DSGVO / GDPR.
 
-**Excerpt from the original readme, kept for informative purposes:**
+# Kasper 🤡 (formerly Casper)
+Theme for the Ghost blogging platform, forked from the official Casper theme, modified for use on my private blog and oriented towards the DSGVO / GDPR.
+### Most relevant added / improved features:
+* 🖍️ Syntax Highlighting using [`prism.js`](https://prismjs.com/index.html)
+* 📝 Comments using [DISQUS](https://disqus.com/)
+* ⏱️ Page Speed Improvements
+	* Asynchronous loading of most resources
+	* Minified JS / CSS
+* ⚖️ DSGVO / GDPR Compliance
+	* 👮 [`Shariff`](https://github.com/heiseonline/shariff) by heise-online to provide privacy-friendly  social-share buttons
+	* 🍪 [Cookie Consent](https://silktide.com/tools/cookie-consent/download/) by silktide
+	* Links to Privacy Policy (`/pricacy)` and Legal Notice (`/legal`) in Footer
+<hr>
+
+### Excerpt from the original readme, kept for informative purposes:
 > # Development 
 > 
 > Casper styles are compiled using Gulp/PostCSS to polyfill future CSS
