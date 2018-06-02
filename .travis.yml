@@ -5,9 +5,10 @@ branches:
   only:
     - ci
 before_install:
-  - npm install -g yarn
+  - npm i -g yarn
 install:
   - yarn install
   - yarn zip
-  - ls
-  - ls dist
+script:
+  - yarn zip
+  - ls -alh dist
