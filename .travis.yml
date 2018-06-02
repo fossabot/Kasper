@@ -17,7 +17,8 @@ deploy:
   provider: releases
   api_key:
     secure: jyahl5xo0r+ABn8mVdn304Z4urzxAsbDY7DcWV9hg026y1n23LAr7NOvxPM+DUKR6N3lE7sKSRVmPYQh/aAdNgZGXASmEkz8c6ZMbq7YgmIzItHbc+MzCCL9DUwZHQiG1f+JFouT2J1auQBu/00snuXMxIWIIDArQ8fYw/8hsizxDoYvaR//1P2NwQ/UiUAsNYZSHdjqvboU1l6LGQ9A3Zshbt+sBP2VlTwdaHAnZGjP1CNvbyYTRavgo08GZN1CEBEowBcuIiwgd5ly1SZ/fYrMZJ/82498982ZdJtzY71Ix19Sm62w5z2/J/2ueaAt6T+AXJqLKnExUHYFz5T4iyBso77VoR+Ko4KVaHpLlcWnxY0hGJNFA215aXGLBXy34EKyVtLveuW3GVCCqjL6Wx8fSq5x0+9kaji/T30YAHMpUl9plr8ehVVJTqqGi3L7Ya0Hbkd/hIhJX4kl8DuOvXLQmtpcrGR8eH6wXdUuhqMWbXD0e+Ofktb/6qZhkFRguWxdAEZ02IenI+oVCpqiSEP/NzKG2Hx7TDwLIU7VE5dz0lj16PEEJ+bjtHvdFs5nlS4qtdzQHFKIWnoRXEX0Ppo8cZK/fdYn4m5naNqSiE9x0wB4jsKnszQkEpIpZGRDwf6T0IVufIYDYI5H9tMaBhL4hRC0WkmvsFdv500GgZM=
-  file: dist/kasper.zip
+  file_glob: true
+  file: dist/*
   on:
     repo: sh0rez/Kasper
     branch: ci
