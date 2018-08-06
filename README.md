@@ -1,9 +1,8 @@
-
-
 # Kasper 🤡 (formerly Casper)
 [![Build Status](https://travis-ci.org/sh0rez/Kasper.svg?branch=master)](https://travis-ci.org/sh0rez/Kasper)
 ![tag](https://img.shields.io/github/tag/sh0rez/Kasper.svg)
 ![license](https://img.shields.io/github/license/sh0rez/Kasper.svg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsh0rez%2FKasper.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsh0rez%2FKasper?ref=badge_shield)
 
 Theme for the Ghost blogging platform, forked from the official Casper theme, modified for use on my private blog and oriented towards the DSGVO / GDPR.
 ### Most relevant added / improved features:
@@ -56,3 +55,6 @@ Theme for the Ghost blogging platform, forked from the official Casper theme, mo
 # Copyright & License
 **Kasper Theme**: Copyright (c) 2018 shorez - Released under the [`GPLv2`](LICENSE)  
 formerly **Original Casper Theme**: Copyright  (c) 2013-2018 Ghost Foundation - Released under the [`MIT license`](https://github.com/TryGhost/Casper/blob/master/LICENSE).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsh0rez%2FKasper.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsh0rez%2FKasper?ref=badge_large)
